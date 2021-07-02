@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rect {
+  margin: 30px auto;
+  height: 300px;
+  width: 600px;
+
+  background-color: green;
+  position: relative;
+}
+
+.circle {
+  height: 170px;
+  width: 170px;
+  border-radius: 100%;
+  background-color: red;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-mf {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-mf img {
+  height: 174px;
+  width: 174px;
+  border-radius: 100%;
+  opacity: 0;
+}
+
+.rect:hover .circle-mf img {
+  height: 164px;
+  width: 164px;
+  cursor: pointer;
+  opacity: 1;
+  transition: 3s ease;
+}
+
+.blog {
+  height: 600px;
+  width: auto;
+  margin: 5px;
+  border: 2px solid goldenrod;
+}
+.blog h1 {
+  text-align: center;
+  color: rgb(124, 108, 19);
+}
+
+.blog p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 550;
+}
+#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 300px;
+  width: 500px;
+  padding: 10px;
+}
+
+span {
+  font-weight: 900;
+  color: goldenrod;
+  font-size: 25px;
+}
+
+.blog .content span {
+  font-weight: 600;
+  color: rgb(39, 30, 7);
+  font-size: 20px;
+}
+.blog .content {
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 450;
+  text-align: justify;
+}
